@@ -1,9 +1,31 @@
  Data Description
 To consider the problem we can list the datas as below:
-•	The city of Toronto data that contains list Boroughs, Neighborhoods along with their latitude and longitude.
-•	Venues in each neighborhood of the city of Toronto.
+•	The city of Toronto data that contains list Boroughs, Neighborhoods along with their latitude and longitude as below,
+           PostalCode	Borough	Neighborhood
+           0	M3A	North York	Parkwoods
+           1	M4A	North York	Victoria Village
+           2	M5A	Downtown Toronto	Regent Park, Harbourfront
+           3	M6A	North York	Lawrence Manor, Lawrence Heights
+           4	M7A	Queen's Park	Ontario Provincial Government
+
+•	Venues in each neighborhood of the city of Toronto as below,
+
+        Neighborhood	Neighborhood Latitude	Neighborhood Longitude	Venue	Venue Latitude	Venue Longitude	Venue Category
+        0	Regent Park, Harbourfront	43.65426	-79.360636	Roselle Desserts	43.653447	-79.362017	Bakery
+        1	Regent Park, Harbourfront	43.65426	-79.360636	Tandem Coffee	43.653559	-79.361809	Coffee Shop
+        2	Regent Park, Harbourfront	43.65426	-79.360636	Cooper Koo Family YMCA	43.653249	-79.358008	Distribution Center
+        3	Regent Park, Harbourfront	43.65426	-79.360636	Body Blitz Spa East	43.654735	-79.359874	Spa
+        4	Regent Park, Harbourfront	43.65426	-79.360636	Impact Kitchen	43.656369	-79.356980	Restaurant
+. KMeans for clustering       
 •	GeoSpace data
-•	Forsquare API to get the most common venues of the city of Toronto.
+•	Forsquare API to get the most common venues of the city of Toronto as below,
+       Neighborhood	1st Most Common Venue	2nd Most Common Venue	3rd Most Common Venue	4th Most Common Venue	5th Most Common Venue	6th Most Common Venue	7th Most Common Venue	8th Most Common Venue	9th Most Common Venue	10th Most Common Venue
+       0	Berczy Park	Cheese Shop	Seafood Restaurant	Cocktail Bar	Farmers Market	Tailor Shop	Jazz Club	Museum	Liquor Store	Beer Bar	Basketball Stadium
+       1	Brockton, Parkdale Village, Exhibition Place	Café	Coffee Shop	Breakfast Spot	Performing Arts Venue	Pet Store	Restaurant	Bakery	Intersection	Italian Restaurant	Nightclub
+       2	CN Tower, King and Spadina, Railway Lands, Har...	Airport Lounge	Airport Service	Airport Terminal	Boat or Ferry	Coffee Shop	Boutique	Rental Car Location	Sculpture Garden	Harbor / Marina	Plane
+       3	Central Bay Street	Coffee Shop	Café	Italian Restaurant	Modern European Restaurant	Middle Eastern Restaurant	Comic Shop	Poke Place	Portuguese Restaurant	Sushi Restaurant	Bubble Tea Shop
+       4	Christie	Grocery Store	Café	Park	Restaurant	Coffee Shop	Nightclub	Italian Restaurant	Candy Store	Baby Store	Discount Store
+
 B. Methodology
 1.	We begin by collecting the city of Toronto data from https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
 2.	We use python folium library to visualize geographic details of Toronto and its boroughs and create a map of Toronto with boroughs superimposed on top by using latitude and longitude values to get the visual as below;
