@@ -1,0 +1,28 @@
+A. Introduction
+A.1. The Background
+Toronto is the capital of Canada and one of the biggest city in Canada. Toronto is the most popular city of Canada. 
+Toronto is a prominent center for music, theatre, motion picture production, television production, and is home to the headquarters of Canada's major national 
+broadcast networks and media outlets. Its varied cultural institutions, which include numerous museums and galleries, festivals and public events, entertainment 
+districts, national historic sites, and sports activities, attract over 43 million tourists each year.
+Toronto is a city with many venues for the tourists. As a tourist, it is difficult visit all these venues in a trip. Especially the trip which is for short period of time, 
+it is a problem to prioritize things to do or places to visit.
+When we consider this problem, we can create a map and information chart where the most 10 common venues at the dedicated neighborhoods in Toronto. 
+A.2. Data Description
+To consider the problem we can list the datas as below:
+•	The city of Toronto data that contains list Boroughs, Neighborhoods along with their latitude and longitude.
+•	Venues in each neighborhood of the city of Toronto.
+•	GeoSpace data
+•	Forsquare API to get the most common venues of the city of Toronto.
+B. Methodology
+1.	We begin by collecting the city of Toronto data from https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
+2.	We use python folium library to visualize geographic details of Toronto and its boroughs and create a map of Toronto with boroughs superimposed on top by using latitude and longitude values to get the visual as below;
+
+3.	We will find all venues for each neighborhood using FourSquare API. 
+ 
+4.	We will then filter out all 10 most common venues.
+  
+5.	Finally, we will visualize the ranking of the venues using python's Folium library.
+ 
+Conclusion
+As a result, there are many attractions in the city center of Toronto, depending on the area there are different venue options to utilize. Above data can be used to plan the trip in advance accordingly to people’s interests and where to visit or what to do. 
+
